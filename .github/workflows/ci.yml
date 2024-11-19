@@ -25,5 +25,16 @@ jobs:
     - name: Executa testes E2E
       run: yarn run tests
 
+    - name: Generate Allure Report
+      run: |
+        npx allure generate --clean
+
+    # Fazer upload dos relatórios como artefato
+    - name: Upload Allure Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: allure-report
+        path: allure-report
+
   
 
