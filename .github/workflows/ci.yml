@@ -27,7 +27,7 @@ jobs:
 
     - name: Generate Allure Report
       run: |
-        npx allure generate --clean
+        npm run allure:repo
 
     # Fazer upload dos relatórios como artefato
     - name: Upload Allure Report
