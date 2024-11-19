@@ -1,0 +1,29 @@
+# CI de Nível 01
+
+name: 'Execução Manual - n1'
+
+# Triggers
+
+on:
+  workflow_dispatch:
+
+jobs:
+  e2e-tests:
+    runs-on: ['ubuntu-latest']
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Instalando dependências
+      run: npm i
+
+    - name: Instalando Yarn
+      run: npm install -g yarn
+
+    - name: Instalando dependências do Yarn
+      run: yarn
+
+    - name: Executa testes E2E
+      run: yarn run tests
+
+  
+
