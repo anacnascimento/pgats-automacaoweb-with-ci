@@ -15,7 +15,7 @@ describe('Automation Exercise - Contact Us Feature', () => {
         homePage.goToContactUsPage();
         name = "QA Ana";
         email = "qaana@gmail.com";
-        let file = "automacaoWeb.txt";
+        let file = "contactFormFIle.txt";
 
         contactUs.fillForm(name, email);
         contactUs.uploadFileToFrom(file);

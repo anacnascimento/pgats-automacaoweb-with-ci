@@ -7,6 +7,5 @@ export default defineConfig({
       allureCypress(on, config);
       return config;
     },
-    // ...
   },
 });

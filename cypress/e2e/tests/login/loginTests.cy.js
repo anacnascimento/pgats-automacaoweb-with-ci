@@ -60,5 +60,4 @@ describe('Automation Exercise - Login Feature', () => {
         register.signUp(username, email);
         register.validateErrorEmailExists();
     });
-
 });

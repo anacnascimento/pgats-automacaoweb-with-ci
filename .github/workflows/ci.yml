@@ -2,8 +2,6 @@
 
 name: 'Execução Manual - n1'
 
-# Triggers
-
 on:
   workflow_dispatch:
 
